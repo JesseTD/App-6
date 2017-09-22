@@ -1,5 +1,4 @@
-var /*config = require('./config'), */
-    mongoose = require('mongoose'),   
+var mongoose = require('mongoose'),   
     express = require('./express');
 
 module.exports.start = function() {
