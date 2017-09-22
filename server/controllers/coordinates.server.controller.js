@@ -4,7 +4,7 @@ var config = require('../config/config'),
 module.exports = function(req, res, next) {
   if(req.body.address) {
     var options = {
-      key: config.googleMaps.key, 
+      key: process.env.googleMaps.key, 
       address: req.body.address
     }
     request({
